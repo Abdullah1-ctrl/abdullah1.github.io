@@ -1,120 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdullah's Website</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+<title>Abdullah's Website</title><style>
 
 body{
-    font-family: Arial, sans-serif;
-    background:#f4f6f9;
-    color:#333;
+margin:0;
+font-family:Arial,sans-serif;
+background:#f4f7fa;
+color:#333;
 }
 
 header{
-    background:linear-gradient(135deg,#007bff,#00c6ff);
-    color:white;
-    text-align:center;
-    padding:80px 20px;
+background:linear-gradient(135deg,#0066cc,#00bfff);
+color:white;
+text-align:center;
+padding:60px 20px;
 }
 
 header h1{
-    font-size:3rem;
+font-size:50px;
+margin:0;
 }
 
 header p{
-    font-size:1.2rem;
-    margin-top:10px;
+font-size:20px;
+}
+
+nav{
+background:#222;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-size:18px;
+padding:10px;
+}
+
+nav a:hover{
+background:#0066cc;
+border-radius:5px;
 }
 
 .container{
-    width:90%;
-    max-width:1000px;
-    margin:auto;
+max-width:1100px;
+margin:auto;
+padding:20px;
 }
 
-section{
-    background:white;
-    margin:30px 0;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+.card{
+background:white;
+padding:25px;
+margin:20px 0;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,0.15);
 }
 
-h2{
-    color:#007bff;
-    margin-bottom:15px;
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
 }
 
-ul{
-    padding-left:20px;
+.gallery img{
+width:300px;
+height:200px;
+object-fit:cover;
+border-radius:10px;
 }
 
-li{
-    margin:10px 0;
-}
-
-.contact a{
-    color:#007bff;
-    text-decoration:none;
+.btn{
+display:inline-block;
+background:#0066cc;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:5px;
+margin-top:10px;
 }
 
 footer{
-    text-align:center;
-    padding:20px;
-    background:#222;
-    color:white;
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
 }
-</style>
-</head>
 
-<body>
+</style></head><body><header>
+<h1>Abdullah</h1>
+<p>Welcome To My Personal Website</p>
+</header><nav>
+<a href="about.html">About Me</a>
+<a href="friends.html">My Friend</a>
+<a href="calculator.html">Calculator</a>
+<a href="quiz.html">Quiz Game</a>
+</nav><div class="container"><div class="card">
+<h2>Welcome</h2><p>
+Hello and welcome to my website.
+I am Abdullah and I enjoy technology,
+computers, websites and learning new things.
+This website contains information about me,
+my friend, a calculator and a quiz game.
+</p>
+</div><div class="card">
+<h2>Beautiful Nature</h2><div class="gallery"><img src="https://picsum.photos/500/300?random=1"><img src="https://picsum.photos/500/300?random=2"><img src="https://picsum.photos/500/300?random=3"></div><p>
+Nature is one of the greatest gifts on Earth.
+Mountains, forests, rivers and flowers make
+our world beautiful and peaceful.
+</p></div><div class="card"><h2>About Punjab</h2><p>
+Punjab is the most populated province of Pakistan.
+It is famous for agriculture, culture,
+historical places and hospitality.
+Lahore, the capital city of Punjab,
+contains many historical landmarks and
+beautiful architecture.
+</p><p>
+Punjab plays an important role in the economy
+of Pakistan and is known as the land of five rivers.
+</p></div><div class="card"><h2>Explore My Website</h2><a class="btn" href="about.html">About Me</a>
 
-<header>
-    <h1>Abdullah</h1>
-    <p>Student | Technology Enthusiast | Future Developer</p>
-</header>
+<a class="btn" href="friends.html">My Friend</a>
 
-<div class="container">
+<a class="btn" href="calculator.html">Calculator</a>
 
-    <section>
-        <h2>👤 Profile</h2>
-        <p>
-            Hello! My name is Abdullah. I enjoy learning about technology,
-            computers, websites, and mobile apps. This is my personal website
-            where I share a little information about myself.
-        </p>
-    </section>
+<a class="btn" href="quiz.html">Quiz Game</a>
 
-    <section>
-        <h2>🎯 Hobbies</h2>
-        <ul>
-            <li>Playing games</li>
-            <li>Learning about computers</li>
-            <li>Exploring new technology</li>
-            <li>Building websites</li>
-            <li>Watching educational videos</li>
-        </ul>
-    </section>
-
-    <section class="contact">
-        <h2>📞 Contact</h2>
-        <p>Email: your-email@example.com</p>
-        <p>Website: www.yourwebsite.com</p>
-    </section>
-
-</div>
-
-<footer>
-    <p>© 2026 Abdullah. All Rights Reserved.</p>
-</footer>
-
-</body>
+</div></div><footer><p>© 2026 Abdullah | Personal Website</p></footer></body>
 </html>
