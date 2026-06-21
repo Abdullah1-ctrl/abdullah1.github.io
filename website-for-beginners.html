@@ -1,131 +1,135 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Quiz Game</title><style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Create a Website for Beginners</title>
+
+<style>
 body{
-font-family:Arial,sans-serif;
-background:linear-gradient(to right,#4facfe,#00f2fe);
-padding:20px;
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.8;
+}
+
+header{
+    background:#2563eb;
+    color:white;
+    padding:30px;
+    text-align:center;
 }
 
 .container{
-background:white;
-max-width:800px;
-margin:auto;
-padding:30px;
-border-radius:15px;
-box-shadow:0 0 15px gray;
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-top:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 h1{
-text-align:center;
-color:#0066cc;
+    margin-bottom:10px;
 }
 
-.question{
-margin-top:20px;
-padding:15px;
-background:#f5f5f5;
-border-radius:10px;
-}
-
-button{
-padding:12px 20px;
-background:#0066cc;
-color:white;
-border:none;
-border-radius:5px;
-cursor:pointer;
-margin-top:20px;
-}
-
-#result{
-font-size:24px;
-font-weight:bold;
-margin-top:20px;
-text-align:center;
+h2{
+    color:#2563eb;
+    margin-top:25px;
 }
 
 a{
-display:inline-block;
-margin-top:20px;
-text-decoration:none;
-background:green;
-color:white;
-padding:10px 15px;
-border-radius:5px;
-}
-</style></head>
-<body><div class="container"><h1>General Knowledge Quiz</h1><form id="quizForm"><div class="question">
-<p>1. What is the capital of Pakistan?</p>
-<input type="radio" name="q1" value="correct"> Islamabad<br>
-<input type="radio" name="q1"> Lahore<br>
-<input type="radio" name="q1"> Karachi
-</div><div class="question">
-<p>2. How many days are in a week?</p>
-<input type="radio" name="q2"> 5<br>
-<input type="radio" name="q2" value="correct"> 7<br>
-<input type="radio" name="q2"> 9
-</div><div class="question">
-<p>3. Which planet is known as the Red Planet?</p>
-<input type="radio" name="q3"> Earth<br>
-<input type="radio" name="q3" value="correct"> Mars<br>
-<input type="radio" name="q3"> Venus
-</div><div class="question">
-<p>4. What is 5 × 6?</p>
-<input type="radio" name="q4"> 20<br>
-<input type="radio" name="q4"> 25<br>
-<input type="radio" name="q4" value="correct"> 30
-</div><div class="question">
-<p>5. Which animal is called the King of the Jungle?</p>
-<input type="radio" name="q5"> Tiger<br>
-<input type="radio" name="q5" value="correct"> Lion<br>
-<input type="radio" name="q5"> Elephant
-</div><div class="question">
-<p>6. How many months are in a year?</p>
-<input type="radio" name="q6"> 10<br>
-<input type="radio" name="q6" value="correct"> 12<br>
-<input type="radio" name="q6"> 14
-</div><div class="question">
-<p>7. Which language is used to create web pages?</p>
-<input type="radio" name="q7"> Python<br>
-<input type="radio" name="q7"> Java<br>
-<input type="radio" name="q7" value="correct"> HTML
-</div><div class="question">
-<p>8. What color is the sky on a clear day?</p>
-<input type="radio" name="q8"> Green<br>
-<input type="radio" name="q8" value="correct"> Blue<br>
-<input type="radio" name="q8"> Red
-</div><div class="question">
-<p>9. Which country is famous for the pyramids?</p>
-<input type="radio" name="q9"> Pakistan<br>
-<input type="radio" name="q9"> India<br>
-<input type="radio" name="q9" value="correct"> Egypt
-</div><div class="question">
-<p>10. What is the largest ocean on Earth?</p>
-<input type="radio" name="q10"> Atlantic Ocean<br>
-<input type="radio" name="q10"> Indian Ocean<br>
-<input type="radio" name="q10" value="correct"> Pacific Ocean
-</div><button type="button" onclick="checkQuiz()">Submit Quiz</button>
-
-</form><div id="result"></div><a href="index.html">Back Home</a>
-
-</div><script>
-function checkQuiz(){
-
-let score = 0;
-
-for(let i=1;i<=10;i++){
-let answers=document.getElementsByName("q"+i);
-
-for(let j=0;j<answers.length;j++){
-if(answers[j].checked && answers[j].value=="correct"){
-score++;
-}
-}
+    color:#2563eb;
+    text-decoration:none;
 }
 
-document.getElementById("result").innerHTML =
-"Your Score: " + score + " / 10";
+.back{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 15px;
+    background:#2563eb;
+    color:white;
+    border-radius:5px;
 }
-</script></body>
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>How to Create a Website for Beginners</h1>
+    <p>Step-by-step guide for beginners</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<p>
+Creating a website may look difficult, but today it is very easy.
+You just need the right steps and basic knowledge.
+In this guide, you will learn how to create your first website from scratch.
+</p>
+
+<h2>Step 1: Choose Your Website Idea</h2>
+<p>
+First decide what your website will be about.
+It can be a blog, portfolio, business site, or tech website.
+</p>
+
+<h2>Step 2: Buy a Domain Name</h2>
+<p>
+A domain name is your website address like www.example.com.
+Choose a short and easy name.
+</p>
+
+<h2>Step 3: Get Hosting</h2>
+<p>
+Hosting stores your website files and makes them online.
+Without hosting, your website cannot be seen on the internet.
+</p>
+
+<h2>Step 4: Create Your Website</h2>
+<p>
+You can build a website using HTML, CSS, and JavaScript
+or use platforms like WordPress.
+</p>
+
+<h2>Step 5: Add Content</h2>
+<p>
+Write helpful articles and useful information for visitors.
+Good content is very important for Google ranking.
+</p>
+
+<h2>Step 6: Make It SEO Friendly</h2>
+<p>
+Use proper headings, keywords, and descriptions
+so your website appears in Google search results.
+</p>
+
+<h2>Step 7: Apply for Google AdSense</h2>
+<p>
+After publishing good content and pages like About, Contact,
+and Privacy Policy, you can apply for AdSense.
+</p>
+
+<h2>Conclusion</h2>
+<p>
+Building a website is easy if you follow the right steps.
+Start simple, keep learning, and improve your website over time.
+</p>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
+
+</div>
+
+</body>
 </html>
