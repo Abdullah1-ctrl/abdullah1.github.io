@@ -3,122 +3,147 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdullah's Tech Hub</title>
+<title>Abdullah Tech Blog</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
 body{
-background:#f5f5f5;
-}
-
-header{
-background:#2563eb;
+margin:0;
+font-family:system-ui, Arial;
+background:#0b1220;
 color:white;
-padding:30px;
-text-align:center;
 }
 
+/* NAV */
 nav{
-background:#1e293b;
-padding:15px;
-text-align:center;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:#111a2e;
+position:sticky;
+top:0;
+}
+
+nav h1{
+font-size:20px;
+color:#4ea1ff;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:0 15px;
-font-size:18px;
+margin-left:20px;
+opacity:0.8;
 }
 
+nav a:hover{
+opacity:1;
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(135deg,#1d4ed8,#9333ea);
+}
+
+.hero h2{
+font-size:42px;
+margin:0;
+}
+
+.hero p{
+opacity:0.9;
+max-width:600px;
+margin:10px auto;
+}
+
+/* CONTAINER */
 .container{
-max-width:1100px;
+max-width:1000px;
 margin:auto;
-padding:20px;
+padding:40px 20px;
 }
 
+/* CARD */
 .card{
-background:white;
-padding:25px;
-margin-bottom:20px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+background:#111a2e;
+padding:20px;
+margin:15px 0;
+border-radius:12px;
+border:1px solid rgba(255,255,255,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#4ea1ff;
 }
 
 .btn{
 display:inline-block;
-background:#2563eb;
-color:white;
-padding:10px 20px;
-text-decoration:none;
-border-radius:5px;
 margin-top:10px;
+padding:10px 15px;
+background:#4ea1ff;
+color:black;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
 }
 
+/* FOOTER */
 footer{
-background:#1e293b;
-color:white;
 text-align:center;
 padding:20px;
-margin-top:30px;
+background:#111a2e;
+margin-top:40px;
+opacity:0.8;
 }
 </style>
 
 </head>
+
 <body>
 
-<header>
-<h1>Abdullah's Tech Hub</h1>
-<p>Technology, AI, Web Development & Online Learning</p>
-</header>
-
 <nav>
+<h1>Abdullah Blog</h1>
+<div>
 <a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-<a href="privacy.html">Privacy Policy</a>
+<a href="website-for-beginners.html">Start Guide</a>
+</div>
 </nav>
+
+<div class="hero">
+<h2>Learn Web Development Easily</h2>
+<p>A modern blog for beginners to learn HTML, websites, AI tools & online earning.</p>
+</div>
 
 <div class="container">
 
+<h2>Latest Articles</h2>
+
 <div class="card">
-<h2>Welcome</h2>
-<p>
-Welcome to Abdullah's Tech Hub.
-Here you'll find articles about technology,
-AI tools, web development, and online learning.
-</p>
+<h3>How to Create a Website for Beginners</h3>
+<p>Step-by-step guide to build your first website from scratch.</p>
+<a class="btn" href="website-for-beginners.html">Read Article</a>
 </div>
 
 <div class="card">
-<h2>Latest Articles</h2>
-
-<h3>How to Create a Website for Beginners</h3>
-<p>Learn the complete process of building a website.</p>
-<a class="btn" href="website-for-beginners.html">
-Read More
-</a>
-
-<hr style="margin:20px 0">
-
 <h3>What is Google AdSense?</h3>
-<p>Understand how website owners earn money online.</p>
-<a class="btn" href="google-adsense.html">
-Read More
-</a>
+<p>Learn how websites make money using ads.</p>
+<a class="btn" href="google-adsense.html">Read Article</a>
+</div>
 
+<div class="card">
+<h3>HTML Basics Explained</h3>
+<p>Start learning HTML in a simple way.</p>
+<a class="btn" href="html-basics.html">Read Article</a>
 </div>
 
 </div>
 
 <footer>
-<p>© 2026 Abdullah's Tech Hub</p>
+© 2026 Abdullah Blog | Built for Learning
 </footer>
 
 </body>
